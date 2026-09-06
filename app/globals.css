@@ -1,0 +1,338 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+:root {
+  --ink: #101010;
+  --paper: #e9e9e7;
+  --mist: #6f6f6a;
+  --acid: #dc143c;
+  --font-plex: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-acid: var(--acid);
+  --font-sans: var(--font-satoshi);
+  --font-mono: var(--font-plex);
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 90rem;
+  --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html,
+body {
+  background: var(--ink);
+  color: var(--paper);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
+  min-height: 100%;
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--acid);
+  outline-offset: 3px;
+}
+
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none !important;
+}
+
+.custom-cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  will-change: transform;
+}
+
+.custom-cursor--mark {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: var(--acid);
+  box-shadow: 0 0 0 0.18rem rgb(220 20 60 / 0.18);
+}
+
+.custom-cursor--trail {
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 1px solid var(--acid);
+  border-radius: 999px;
+  opacity: 0.7;
+}
+
+.type-display {
+  font-size: 4.5rem;
+  line-height: 0.88;
+  letter-spacing: 0;
+}
+
+.type-headline {
+  font-size: 3rem;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.type-title {
+  font-size: 1.75rem;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.type-label {
+  font-family: var(--font-plex), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.pad-x {
+  padding-inline: 1.25rem;
+}
+
+.hairline {
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  opacity: 0.14;
+}
+
+.hero-hairline {
+  transform: translateY(-1rem);
+}
+
+.section-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.hero-title {
+  font-family: var(--font-horizon), var(--font-satoshi), ui-sans-serif, sans-serif;
+  font-size: clamp(5rem, 20vw, 14.5rem);
+  font-weight: 400;
+  line-height: 0.76;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+}
+
+.manifesto-line {
+  font-size: 2.65rem;
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.stack-list {
+  perspective: 900px;
+}
+
+.stack-row {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1rem;
+  border-top: 1px solid rgb(233 233 231 / 0.15);
+  padding-block: 1.45rem;
+  transition:
+    transform 500ms var(--ease-cinematic),
+    border-color 300ms ease;
+}
+
+.stack-row:hover {
+  border-color: rgb(220 20 60 / 0.75);
+  transform: translateX(0.7rem) rotateX(3deg);
+}
+
+.stack-name {
+  font-size: 2.45rem;
+  font-weight: 900;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.stack-row p {
+  grid-column: 2;
+}
+
+.project-title {
+  font-size: 2.8rem;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.project-media {
+  aspect-ratio: 1.55;
+  overflow: hidden;
+  border: 1px solid rgb(16 16 16 / 0.16);
+  background: #d9d9d4;
+  transition:
+    transform 500ms var(--ease-cinematic),
+    filter 500ms var(--ease-cinematic);
+}
+
+.project-row:hover .project-media {
+  filter: contrast(1.08);
+  transform: scale(0.985);
+}
+
+.service-row {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem;
+}
+
+.service-name {
+  font-size: 3.4rem;
+  line-height: 0.88;
+}
+
+.service-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  color: rgb(233 233 231 / 0.64);
+}
+
+.service-items li {
+  border: 1px solid rgb(233 233 231 / 0.16);
+  padding: 0.55rem 0.75rem;
+  font-family: var(--font-plex), ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.timeline {
+  border-left: 1px solid rgb(16 16 16 / 0.16);
+}
+
+.timeline-step {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+  padding: 0 0 3rem 1.25rem;
+}
+
+.contact-title {
+  font-size: 3.4rem;
+  line-height: 0.88;
+  letter-spacing: 0;
+  max-width: 11ch;
+}
+
+.about-title {
+  max-width: 13ch;
+  font-size: 3rem;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+@media (min-width: 48rem) {
+  .pad-x {
+    padding-inline: 2rem;
+  }
+
+  .type-display {
+    font-size: 8rem;
+  }
+
+  .type-headline {
+    font-size: 5.5rem;
+  }
+
+  .type-title {
+    font-size: 3rem;
+  }
+
+  .hero-title {
+    font-size: clamp(8rem, 18vw, 16rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .project-title {
+    font-size: 3.75rem;
+  }
+
+  .manifesto-line {
+    font-size: 5.75rem;
+  }
+
+  .stack-row {
+    grid-template-columns: 5rem 1fr 20rem;
+    align-items: center;
+  }
+
+  .stack-name {
+    font-size: 5rem;
+  }
+
+  .stack-row p {
+    grid-column: auto;
+  }
+
+  .service-row {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+  }
+
+  .service-name {
+    font-size: 5.75rem;
+  }
+
+  .contact-title {
+    font-size: 7rem;
+  }
+
+  .about-title {
+    font-size: 5rem;
+  }
+
+}
+
+@media (min-width: 90rem) {
+  .pad-x {
+    padding-inline: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 16rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
