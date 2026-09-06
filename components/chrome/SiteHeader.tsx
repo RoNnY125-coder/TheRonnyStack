@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLenis } from "lenis/react";
 import { nav, site } from "@/content/site";
 import { Magnetic } from "@/components/motion/Magnetic";
@@ -32,9 +33,16 @@ export function SiteHeader() {
           <a
             href="#hero"
             onClick={(event) => onNav(event, "#hero")}
-            className="pointer-events-auto font-mono text-[9px] font-medium tracking-[0.16em] text-current uppercase md:text-[11px] md:tracking-[0.22em]"
+            className="pointer-events-auto block"
           >
-            {site.shortName}
+            <Image
+              src="/theronnystack-logo.png"
+              alt={site.name}
+              width={2000}
+              height={2000}
+              className="h-8 w-8 object-contain md:h-10 md:w-10"
+              priority
+            />
           </a>
         </Magnetic>
 
