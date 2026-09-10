@@ -4,26 +4,26 @@ export const processSteps: ProcessStep[] = [
   {
     id: "discover",
     name: "Discover",
-    line: "Listen first. Map the business, the audience, the gaps.",
+    line: "Understand the business, audience, and actual problem.",
   },
   {
     id: "strategize",
     name: "Strategize",
-    line: "Choose the layers that matter now — not a bloated wishlist.",
+    line: "Define the right digital direction before making the thing.",
   },
   {
     id: "design",
     name: "Design",
-    line: "Make it feel inevitable: type, rhythm, and a point of view.",
+    line: "Create the visual language and experience system.",
   },
   {
     id: "build",
     name: "Build",
-    line: "Ship it fast, structured, and ready to change.",
+    line: "Turn the system into a fast, functional product.",
   },
   {
     id: "grow",
     name: "Grow",
-    line: "Keep stacking — search, conversion, systems, whatever comes next.",
+    line: "Improve discovery, conversion, and performance over time.",
   },
 ];

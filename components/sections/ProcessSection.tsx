@@ -8,12 +8,12 @@ export function ProcessSection() {
         <div className="hairline" />
         <div className="section-topline">
           <p className="type-label text-ink/55">06 Process</p>
-          <p className="type-label text-ink/35">No theater</p>
+          <p className="type-label text-ink/35">Clear direction, then momentum</p>
         </div>
         <div className="mt-16 grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <Reveal>
-            <h2 className="type-headline max-w-[8ch] font-black uppercase">
-              Listen. Shape. Ship.
+            <h2 className="type-headline max-w-[9ch] font-black uppercase">
+              Discover. Strategize. Grow.
             </h2>
           </Reveal>
           <div className="timeline">

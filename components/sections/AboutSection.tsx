@@ -8,7 +8,7 @@ export function AboutSection() {
         <div className="hairline" />
         <div className="section-topline">
           <p className="type-label text-paper/55">07 About</p>
-          <p className="type-label text-paper/35">Raunak Sharma</p>
+          <p className="type-label text-paper/35">Independent digital studio</p>
         </div>
         <div className="mt-16 grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
           <Reveal>
@@ -20,9 +20,14 @@ export function AboutSection() {
               ))}
             </h2>
           </Reveal>
-          <p className="max-w-xl text-xl leading-snug text-paper/68 md:text-2xl">
-            {site.about.body}
-          </p>
+          <div className="max-w-xl">
+            <p className="text-xl leading-snug text-paper/68 md:text-2xl">
+              {site.about.body}
+            </p>
+            <p className="mt-8 border-t border-paper/15 pt-5 font-mono text-xs leading-relaxed tracking-[0.12em] text-paper/48 uppercase">
+              {site.about.founderLine}
+            </p>
+          </div>
         </div>
       </div>
     </section>

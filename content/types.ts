@@ -19,14 +19,14 @@ export type StackLayer = {
   payoff: string;
 };
 
-export type ProjectStatus = "concept" | "live";
+export type ProjectKind = "Concept" | "Internal";
 
 export type Project = {
   slug: string;
   name: string;
-  industry: string;
-  year: string;
-  status: ProjectStatus;
+  kind: ProjectKind;
+  product: string;
+  contribution: string;
   summary: string;
   services: string[];
   cover: string;

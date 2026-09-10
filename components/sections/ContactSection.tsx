@@ -15,28 +15,35 @@ export function ContactSection() {
         <div>
           <p className="type-label mb-8 text-acid">{site.contact.line}</p>
           <h2 className="contact-title font-black uppercase">
-            Let&apos;s make the internet notice.
+            Let&apos;s build your next layer.
           </h2>
+          <p className="mt-7 max-w-xl text-lg leading-snug text-paper/62 md:text-xl">
+            Tell us about a new website, SEO or growth work, design, AI automation, or a
+            complete digital presence.
+          </p>
         </div>
         <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
-          <div>
+          <div className="hero-actions">
             <Magnetic>
               <a
-                className="inline-flex border-b border-paper pb-2 text-2xl font-black uppercase transition-colors hover:border-acid hover:text-acid md:text-5xl"
-                href={`mailto:${site.email}`}
+                className="button-primary button-primary--light"
+                href={`mailto:${site.email}?subject=Project%20enquiry%20for%20TheRonnyStack`}
               >
-                {site.contact.cta} ↗
+                {site.contact.cta} <span aria-hidden>↗</span>
               </a>
             </Magnetic>
+            <a className="button-secondary button-secondary--light" href={`mailto:${site.email}`}>
+              Get in touch <span aria-hidden>↗</span>
+            </a>
           </div>
           <div className="flex flex-wrap gap-5 font-mono text-[11px] tracking-[0.2em] uppercase text-paper/55">
             <a className="hover:text-acid" href={`mailto:${site.email}`}>
               {site.email}
             </a>
-            <a className="hover:text-acid" href={site.socials.instagram}>
+            <a className="hover:text-acid" href={site.socials.instagram} target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a className="hover:text-acid" href={site.socials.linkedin}>
+            <a className="hover:text-acid" href={site.socials.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </div>

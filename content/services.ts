@@ -12,28 +12,36 @@ export const serviceGroups: ServiceGroup[] = [
     ],
   },
   {
-    id: "design",
-    name: "Design",
-    items: ["UI/UX", "Brand identity", "Design systems", "Editorial layouts"],
-  },
-  {
     id: "growth",
     name: "Growth",
     items: [
-      "SEO & local SEO",
+      "SEO",
+      "Local SEO",
       "Conversion optimization",
-      "Analytics setup",
+      "Analytics",
       "Search & social presence",
     ],
   },
   {
-    id: "systems",
-    name: "Systems",
+    id: "creative",
+    name: "Creative",
     items: [
-      "Automation",
+      "UI/UX",
+      "Brand identity",
+      "Design systems",
+      "Digital creatives",
+      "Visual direction",
+    ],
+  },
+  {
+    id: "systems",
+    name: "AI & Systems",
+    items: [
       "AI integrations",
-      "Ops tooling",
-      "Whatever the business actually needs next",
+      "Automation",
+      "Business workflows",
+      "Internal tools",
+      "Custom digital systems",
     ],
   },
 ];

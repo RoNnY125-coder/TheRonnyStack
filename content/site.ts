@@ -7,39 +7,35 @@ export const site = {
   founder: "Raunak Sharma",
   tagline: "Presence, built in layers.",
   description:
-    "TheRonnyStack is a young digital studio building websites, design, and growth systems for businesses that want a coherent presence — not another template.",
+    "TheRonnyStack is a digital studio for small businesses and early-stage teams building websites, design systems, search visibility, and practical digital growth.",
   email: "theronnystack@gmail.com",
   socials: {
     instagram:
       "https://www.instagram.com/theronnystack?stkn=MWtqMXJvYnNybXBreg==",
     linkedin: "https://www.linkedin.com/in/raunak-sharma-b91650344/",
   },
-  phrase: "Still stacking.",
+  phrase: "Presence, built in layers.",
   manifesto: [
-    "The internet is the first handshake.",
-    "Search, maps, social, the site — they are not separate.",
-    "We make them one presence.",
+    "Your website is not your whole presence.",
+    "Neither is search. Neither is social.",
+    "People experience it all as one business.",
+    "We build the layers together.",
   ],
   about: {
-    lines: [
-      "I'm still learning.",
-      "I'm still figuring things out.",
-      "I'm building anyway.",
-    ],
-    body: "I'm Raunak Sharma — a 2nd-year student, designer, and developer. TheRonnyStack is small on purpose: a studio that will grow as I do, through business, design, code, SEO, marketing, sales, automation, AI, and strategy.",
+    lines: ["Intentionally small.", "Serious by design."],
+    body: "TheRonnyStack started with one developer, a lot of curiosity, and a simple belief: businesses deserve digital experiences that are actually thought through. We work across design, development, SEO, growth, and emerging AI systems, learning by building and improving with every project.",
+    founderLine:
+      "Raunak Sharma — Founder / Developer. A 2nd-year Computer Science student building TheRonnyStack alongside college.",
   },
-  vision: {
-    kicker: "This is only V1.",
-    stages: [
-      { when: "Today", what: "Web + Design" },
-      { when: "Tomorrow", what: "SEO + Growth" },
-      { when: "Next", what: "Automation + AI" },
-      { when: "Eventually", what: "Whatever the business needs" },
-    ],
-  },
+  capabilities: [
+    { name: "Web", line: "Fast, considered websites and landing pages." },
+    { name: "Design", line: "Clear visual systems and useful experiences." },
+    { name: "Growth", line: "Discovery, conversion, and visibility layers." },
+    { name: "AI & Systems", line: "Practical automation and custom workflows." },
+  ],
   contact: {
-    line: "Got a business worth building?",
-    cta: "Let's talk",
+    line: "Have a business worth building?",
+    cta: "Start a project",
   },
 } as const;
 
@@ -58,6 +54,6 @@ export const sections: SiteSection[] = [
   { id: "services", index: "05", name: "Services", field: "ink" },
   { id: "process", index: "06", name: "Process", field: "paper" },
   { id: "about", index: "07", name: "About", field: "ink" },
-  { id: "vision", index: "08", name: "Vision", field: "paper" },
+  { id: "capabilities", index: "08", name: "Capabilities", field: "paper" },
   { id: "contact", index: "09", name: "Contact", field: "ink" },
 ];

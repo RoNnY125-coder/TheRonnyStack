@@ -8,11 +8,11 @@ export function ServicesSection() {
         <div className="hairline" />
         <div className="section-topline">
           <p className="type-label text-paper/55">05 Services</p>
-          <p className="type-label text-paper/35">Web / Design / Growth</p>
+          <p className="type-label text-paper/35">Useful now. Expanding with intent.</p>
         </div>
         <Reveal>
-          <h2 className="type-headline mt-16 max-w-[11ch] font-black uppercase">
-            The useful parts.
+          <h2 className="type-headline mt-16 max-w-[12ch] font-black uppercase">
+            What we can build together.
           </h2>
         </Reveal>
         <div className="mt-14 divide-y divide-paper/15">
