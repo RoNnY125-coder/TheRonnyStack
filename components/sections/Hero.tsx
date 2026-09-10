@@ -20,14 +20,7 @@ export function Hero() {
               We build websites, design digital experiences, improve search visibility,
               and create systems that help businesses get discovered, trusted, and chosen.
             </p>
-            <div className="hero-actions mt-8 justify-center">
-              <a className="button-primary" href="#contact">
-                Start a project <span aria-hidden>↗</span>
-              </a>
-              <a className="button-secondary" href="#work">
-                View our work <span aria-hidden>↓</span>
-              </a>
-            </div>
+
           </div>
         </Reveal>
         <div className="relative z-10 flex items-end justify-center gap-6 md:justify-between">
