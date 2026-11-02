@@ -5,10 +5,6 @@ export function VisionSection() {
     <section id="capabilities" className="bg-paper text-ink">
       <div className="pad-x py-24 md:py-28">
         <div className="hairline" />
-        <div className="section-topline">
-          <p className="type-label text-ink/55">08 Capabilities</p>
-          <p className="type-label text-ink/35">{site.phrase}</p>
-        </div>
         <h2 className="type-headline mt-16 max-w-[10ch] font-black uppercase">
           Built in layers.
         </h2>

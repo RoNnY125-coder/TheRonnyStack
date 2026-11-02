@@ -2,27 +2,15 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    slug: "overclock",
-    name: "Overclock",
-    kind: "Concept",
-    product: "A gaming performance homepage.",
-    contribution: "Web design, visual direction, and interaction design.",
+    slug: "noir",
+    name: "NOIR",
+    kind: "Selected Work",
+    product: "Contemporary dining experience & reservation platform.",
+    contribution: "Brand identity, web experience, art direction, and reservation flow.",
     summary:
-      "A high-intensity landing page that makes speed, contrast, and a sharp first impression feel like part of the product.",
-    services: ["Web", "Creative", "Experience"],
-    cover: "/projects/overclock-home.png",
-    href: "https://overclock-9.vercel.app/",
-  },
-  {
-    slug: "stack-audit",
-    name: "Stack Audit",
-    kind: "Internal",
-    product: "A technical audit tool concept.",
-    contribution: "Product thinking, UX design, and system design.",
-    summary:
-      "A focused interface that turns technical review into an understandable product story for teams who need a clearer next step.",
-    services: ["Web", "UX", "Systems"],
-    cover: "/projects/stack-audit-home.png",
-    href: "https://stack-audit-ashy.vercel.app/",
+      "A contemporary dining experience shaped by fire, flavour, and the art of slowing down. Built with mood-driven art direction, immersive storytelling, and seamless table reservations.",
+    services: ["Web Experience", "Art Direction", "Interaction"],
+    cover: "/projects/noir-home.png",
+    href: "https://noir-theronnystack.vercel.app/",
   },
 ];

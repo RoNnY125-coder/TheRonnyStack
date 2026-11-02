@@ -48,33 +48,6 @@ body {
   outline-offset: 3px;
 }
 
-.has-custom-cursor,
-.has-custom-cursor * {
-  cursor: none !important;
-}
-
-.custom-cursor {
-  position: absolute;
-  left: 0;
-  top: 0;
-  will-change: transform;
-}
-
-.custom-cursor--mark {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 999px;
-  background: var(--acid);
-  box-shadow: 0 0 0 0.18rem rgb(220 20 60 / 0.18);
-}
-
-.custom-cursor--trail {
-  width: 2.1rem;
-  height: 2.1rem;
-  border: 1px solid var(--acid);
-  border-radius: 999px;
-  opacity: 0.7;
-}
 
 .type-display {
   font-size: 4.5rem;
@@ -181,10 +154,10 @@ body {
 }
 
 .project-media {
-  aspect-ratio: 1.55;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid rgb(16 16 16 / 0.16);
-  background: #d9d9d4;
+  background: #0d0c0c;
   transition:
     transform 500ms var(--ease-cinematic),
     filter 500ms var(--ease-cinematic);

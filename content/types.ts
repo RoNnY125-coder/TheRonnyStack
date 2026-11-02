@@ -19,7 +19,7 @@ export type StackLayer = {
   payoff: string;
 };
 
-export type ProjectKind = "Concept" | "Internal";
+export type ProjectKind = "Concept" | "Internal" | "Client" | "Live Project" | "Hospitality" | "Selected Work";
 
 export type Project = {
   slug: string;

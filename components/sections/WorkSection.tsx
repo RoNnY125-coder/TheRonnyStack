@@ -7,10 +7,6 @@ export function WorkSection() {
     <section id="work" className="bg-paper text-ink">
       <div className="pad-x py-24 md:py-28">
         <div className="hairline" />
-        <div className="section-topline">
-          <p className="type-label text-ink/55">04 Selected work</p>
-          <p className="type-label text-ink/35">A closer look at the thinking</p>
-        </div>
         <Reveal>
           <h2 className="type-headline mt-16 max-w-[10ch] font-black uppercase">
             Built around a real problem.
@@ -27,7 +23,18 @@ export function WorkSection() {
               </p>
               <div>
                 <p className="type-label mb-4 text-acid">{project.kind}</p>
-                <h3 className="project-title font-black uppercase">{project.name}</h3>
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-block transition-colors hover:text-acid"
+                  >
+                    <h3 className="project-title font-black uppercase">{project.name}</h3>
+                  </a>
+                ) : (
+                  <h3 className="project-title font-black uppercase">{project.name}</h3>
+                )}
                 <p className="mt-5 max-w-xl text-lg leading-snug text-ink/66">
                   {project.summary}
                 </p>
@@ -55,14 +62,33 @@ export function WorkSection() {
                   </a>
                 ) : null}
               </div>
-              <div className="project-media">
-                <Image
-                  src={project.cover}
-                  alt={`${project.name} homepage preview`}
-                  width={720}
-                  height={430}
-                  className="h-full w-full object-cover"
-                />
+              <div className="project-media overflow-hidden border border-ink/15">
+                {project.href ? (
+                  <a
+                    href={project.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group block h-full w-full overflow-hidden"
+                    aria-label={`View ${project.name} live project`}
+                  >
+                    <Image
+                      src={project.cover}
+                      alt={`${project.name} live website preview`}
+                      width={1024}
+                      height={576}
+                      className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                      priority
+                    />
+                  </a>
+                ) : (
+                  <Image
+                    src={project.cover}
+                    alt={`${project.name} live website preview`}
+                    width={1024}
+                    height={576}
+                    className="h-full w-full object-contain"
+                  />
+                )}
               </div>
             </article>
           ))}

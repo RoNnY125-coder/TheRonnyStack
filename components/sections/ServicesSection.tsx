@@ -6,10 +6,6 @@ export function ServicesSection() {
     <section id="services" className="bg-ink text-paper">
       <div className="pad-x py-24 md:py-28">
         <div className="hairline" />
-        <div className="section-topline">
-          <p className="type-label text-paper/55">05 Services</p>
-          <p className="type-label text-paper/35">Useful now. Expanding with intent.</p>
-        </div>
         <Reveal>
           <h2 className="type-headline mt-16 max-w-[12ch] font-black uppercase">
             What we can build together.

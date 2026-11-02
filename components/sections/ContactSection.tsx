@@ -7,10 +7,6 @@ export function ContactSection() {
       <div className="pad-x flex min-h-svh flex-col justify-between py-24 md:py-28">
         <div>
           <div className="hairline" />
-          <div className="section-topline">
-            <p className="type-label text-paper/55">09 Contact</p>
-            <p className="type-label text-paper/35">Start a conversation</p>
-          </div>
         </div>
         <div>
           <p className="type-label mb-8 text-acid">{site.contact.line}</p>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { AppProviders } from "@/components/providers/AppProviders";
-import { CustomCursor } from "@/components/chrome/CustomCursor";
 import { ScrollProgress } from "@/components/chrome/ScrollProgress";
 import { SiteHeader } from "@/components/chrome/SiteHeader";
 import { SkipLink } from "@/components/chrome/SkipLink";
@@ -73,7 +72,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <SkipLink />
         <AppProviders>
-          <CustomCursor />
           <ScrollProgress />
           <SiteHeader />
           {children}
